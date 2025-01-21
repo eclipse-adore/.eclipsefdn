@@ -4,8 +4,6 @@ orgs.newOrg('automotive.adore', 'eclipse-adore') {
   settings+: {
     description: "",
     name: "Eclipse Adore project",
-    packages_containers_internal: false,
-    packages_containers_public: false,
     web_commit_signoff_required: false,
     workflows+: {
       actions_can_approve_pull_request_reviews: false,
@@ -24,8 +22,6 @@ orgs.newOrg('automotive.adore', 'eclipse-adore') {
       gh_pages_source_branch: "gh-pages",
       gh_pages_source_path: "/docs",
       homepage: "https://eclipse.github.io/adore/",
-      secret_scanning: "disabled",
-      secret_scanning_push_protection: "disabled",
       topics+: [
         "automated-driving",
         "motion-planning",
