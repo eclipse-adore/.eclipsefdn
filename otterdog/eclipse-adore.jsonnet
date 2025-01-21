@@ -7,7 +7,6 @@ orgs.newOrg('automotive.adore', 'eclipse-adore') {
     web_commit_signoff_required: false,
     workflows+: {
       actions_can_approve_pull_request_reviews: false,
-      default_workflow_permissions: "write",
     },
   },
   _repositories+:: [
@@ -32,9 +31,6 @@ orgs.newOrg('automotive.adore', 'eclipse-adore') {
         "vehicle-dynamics"
       ],
       web_commit_signoff_required: false,
-      workflows+: {
-        default_workflow_permissions: "write",
-      },
       environments: [
         orgs.newEnvironment('github-pages') {
           branch_policies+: [
